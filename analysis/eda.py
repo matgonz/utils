@@ -1,6 +1,8 @@
 import numpy as np
+import pandas as pd
 
-def dataoveriew(df, message):
+def dataoveriew(df:pd.DataFrame, 
+                message:str):
     print(f'{message}:\n')
     print('Number of rows: ', df.shape[0])
     print("\nNumber of features:", df.shape[1])
